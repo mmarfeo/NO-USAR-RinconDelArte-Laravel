@@ -1,0 +1,275 @@
+/**************************************************************/
+/************************** LAYOUT ****************************/
+/**************************************************************/
+
+/* ----------------------- GENERAL -------------------------- */
+/* 3 -paso se copiaron todos los archivos css del proecto ya hecho*/
+li {
+    display: inline-block;
+}
+ul {
+    margin: 0;
+}
+/* ----------------------- HEADER --------------------------- */
+
+.logo-imagen, .buscador, .buscador-barra {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.logo-imagen {
+    height: 50px;
+}
+.buscador-barra {
+    padding-left: 1vw;
+}
+.envio-gratis-wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* ----------------------- MAIN ----------------------------- */
+main {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.carousel {
+    padding: 0;
+}
+.carousel-container img {
+    width: 100%;
+}
+.content {
+    padding: 5vh 0;
+}
+.boton {
+    padding: 10px 0;
+}
+.formulario {
+    margin-bottom: 20px;
+}
+.espacio-boton {
+    margin-top: 2vh;
+}
+.foto-perfil {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* ----------------------- FOOTER --------------------------- */
+
+footer {
+    padding: 20px 0;
+}
+
+/**************************************************************/
+/*********************** TYPOGRAPHY ***************************/
+/**************************************************************/
+
+/* ----------------------- GENERAL -------------------------- */
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.15em;
+    text-align: center;
+}
+h1, h2 {
+    font-family:  'Open Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+/* ----------------------- HEADER --------------------------- */
+
+.envio-gratis-wrap {
+    text-transform: uppercase;
+}
+.envio-gratis-wrap, .compras {
+    font-weight: bold;
+}
+
+/* ----------------------- MAIN ----------------------------- */
+
+main {
+    font-size: 1.1em;
+}
+label {
+    text-align: left;
+}
+/* ----------------------- FOOTER --------------------------- */
+
+
+/**************************************************************/
+/************************** COLOR *****************************/
+/**************************************************************/
+
+/* ------------------ PALETA DE COLORES --------------------- */
+/*
+                        #000000 Black
+                        #FFFFFF White
+                        #994C4F English Red
+                        #7F3F41 Cordovan
+                        #FF0076 Winter Sky
+                        #F0F0F0 Isabelline
+                        #EAE3E3 Platinum
+                        #E50000 Ku Crimson
+*/
+
+/* ----------------------- GENERAL -------------------------- */
+
+a:hover {
+    text-decoration: none;
+}
+
+/* ----------------------- HEADER --------------------------- */
+
+header {
+    box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.29);
+}
+.envio-gratis a, .compras, .compras a, .buscador-boton {
+    color: #FFFFFF;
+}
+.menu a ,.compras, .compras a {
+    color: #EAE3E3;
+}
+.menu, .logo, .compras {
+    background: #7F3F41;
+}
+.buscador {
+    background: #994C4F;
+}
+.envio-gratis-wrap {
+    background: #FF0076;
+}
+.buscador-barra {
+    background: #FFFFFF;
+    border: 1px solid #EAE3E3;
+}
+.buscador-boton {
+    background: #FF0076;
+    border: 1px solid #FF0076;
+    border-radius: 5px;
+}
+
+/* ----------------------- MAIN ----------------------------- */
+.sidebar, .products, .carousel-inner, .content {
+    background: #FFFFFF;
+}
+h2 {
+    color: #994C4F;
+}
+a {
+    color: #000000;
+}
+.boton {
+    background: #994C4F;
+    color: #EAE3E3;
+    border: 2px solid #994C4F;
+    border-radius: 5px;
+}
+.preg-form:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.error {
+    color: #E50000;
+}
+/* ----------------------- FOOTER --------------------------- */
+footer {
+    background: #994C4F;
+    box-shadow: 0 50vh 0 50vh #994C4F;
+}
+footer a {
+    color: #EAE3E3;
+}
+footer a:hover {
+    color: #FFFFFF;
+}
+
+/**************************************************************/
+/********************** MEDIA QUERIES *************************/
+/**************************************************************/
+
+/* sm */
+@media (min-width: 576px) {
+    .products-wrap {
+        padding-top: 15px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .precio-total {
+        border-right: 1px solid #FFFFFF;
+    }
+    body {
+        background: #F0F0F0;
+    }
+    .sidebar, .products, .carousel-inner, .content {
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.29);
+        background: #FFFFFF;
+    }
+    main {
+        padding: 15px 0;
+    }
+    .carousel {
+        padding: 0 15px;
+    }
+}
+/* lg */
+@media (min-width: 992px) {
+    .busqueda-avanzada span {
+        color: #EAE3E3;
+    }
+    .busqueda-avanzada {
+        border: 1px solid #EAE3E3;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    .nav-derecha a, .nav-derecha span, .nav-izquierda a, .cerrar-sesion {
+        color: #EAE3E3;
+    }
+    .nav-derecha a:hover, .nav-izquierda a:hover, .cerrar-sesion:hover {
+        color: #FFFFFF;
+    }
+    .nav-derecha, .nav-izquierda, .envio-gratis-wrap, .cerrar-sesion {
+        background: #7F3F41;
+    }
+    .nav-secundaria a:hover {
+        border-bottom: 1px solid #000000;
+    }
+    .logo {
+        background: #994C4F;
+    }
+    .compras {
+        background: #FF0076;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+    }
+    .nav-secundaria, .selector-wrap, .espacio, select {
+        background: #FFFFFF;
+    }
+    .nav-secundaria a {
+        color: #000000;
+    }
+    select {
+        border: none;
+    }
+    .logo-imagen {
+        height: 80px;
+    }
+    .envio-gratis {
+        background: url(/img/envio-gratis.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .envio-gratis-wrap {
+        padding: 0;
+    }
+    .cerrar-sesion {
+        border: none;
+    }
+    .bienvenida {
+        font-weight: bold;
+    }
+}
